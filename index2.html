@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TODO: Update the title with your name or brand (e.g. "About Me | John Doe") -->
+    <title>About Me | Caroline Schwengler</title>
+
+    <!-- TODOx: Replace the href link below with your own favicon URL or path: may need change icon? -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="www.linkedin.com/in/carolineschwengler"
+    />
+
+    <!-- Bootstrap HTML link connection -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons link connection -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Page-specific styles moved to assets/css/style.css -->
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top py-3">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+
+        <!-- TODO: Add your logo image path to src and update the alt text -->
+          <!-- <img src="" alt="Logo" width="40" height="40" /> -->
+
+          <!-- TODO: Change to your own brand name -->
+          <span class="fw-bold tracking-wide">Caroline Schwengler</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+          title="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center gap-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="skills.html">Skills</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="photography.html">Photography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li> -->
+            <li class="nav-item ms-lg-2">
+              <button
+                class="btn btn-outline-secondary theme-toggle-btn"
+                id="themeToggle"
+                onclick="toggleTheme()"
+                type="button"
+                aria-label="Toggle color theme"
+                title="Toggle color theme"
+              >
+                <i class="bi bi-sun-fill" id="themeIcon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1 about-section">
+      <section class="mb-5">
+        <h2 class="text-uppercase mb-3 accent-heading">About Me</h2>
+
+        <!-- TODO: Add a short, impactful lead bio sentence summarizing who you are -->
+        <p class="text-body-secondary">
+          I’m a Statistics & Data Science graduate student at the University of
+          Arizona with a background in mathematics and computer science.
+          I enjoy statistical modeling, machine learning, and working with 
+          large amounts of data to extracting insights from complex problems
+          that can have a real-world impact.
+        </p>
+      </section>
+
+      <!-- <div class="about-divider"></div>
+
+      <section class="mb-5">
+        <h2 class="text-uppercase mb-3 accent-heading">Vision</h2>
+
+        TODO: Write your vision statement, engineering philosophy, or long-term career goals 
+        <p class="text-body-secondary">
+          Share your long-term goals here. Whether you want to build impactful
+          products, grow in a specific field, or create meaningful user
+          experiences, this section helps visitors understand your direction and
+          values.
+        </p>
+      </section> -->
+
+      <div class="about-divider"></div>
+
+      <section class="mb-5">
+        <h2 class="text-uppercase mb-3 accent-heading">Projects</h2>
+
+        <!-- TODO: Summarize the types of software or systems you specialize in (e.g., SaaS, Web APIs, Mobile) -->
+        <p class="text-body-secondary">
+          My projects explore machine learning and statistical modeling across 
+          different domains. I’ve worked with protein-structure prediction 
+          models, predictive modeling of clinical outcomes, and time-series 
+          analysis of patient data, using Python and statistical methods to 
+          investigate complex real-world problems.
+        </p>
+      </section>
+
+      <div class="about-divider"></div>
+
+      <section class="mb-4">
+        <h2 class="text-uppercase mb-3 accent-heading">Future Focus</h2>
+
+        <!-- TODO: Mention technologies, frameworks, or concepts you are currently mastering or exploring next -->
+        <p class="text-body-secondary">
+          As I continue my graduate studies, I am looking to deepen my experience 
+          in data science and machine learning, particularly in computational methods, 
+          high-dimensional analysis, and study design. I hope to stay up to 
+          date with current research and work of challenging projects where I can 
+          combine statistical reasoning with machine learned. I am especially 
+          excited to gain experitise explaining these concepts and working on 
+          a variety of projects through a statistical consulting course.
+          Upon graduation, I am seeking full-time data science positions probably
+          in either the consulting or health care domains.
+        </p>
+      </section>
+    </main>
+    <footer class="bg-body-tertiary py-4 mt-auto">
+      <div class="container">
+        <div class="row align-items-center text-body-secondary small mb-3">
+
+          <!-- TODO: Update copyright year and replace [Your Name] -->
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; 2026 Caroline Schwengler. All rights reserved. Built with 
+            Bootstrap 5.
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a
+              href="index.html"
+              class="text-decoration-none text-body-secondary me-3"
+              >About</a
+            >
+            <a
+              href="projects.html"
+              class="text-decoration-none text-body-secondary me-3"
+              >Projects</a
+            >
+            <a
+              href="resume.html"
+              class="text-decoration-none text-body-secondary"
+              >Resume</a
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <!-- TODO: Replace social media links with your actual URLs or remove unused icons -->
+            <div class="d-flex justify-content-center gap-4 fs-4">
+              <a
+                href="www.linkedin.com/in/carolineschwengler"
+                class="text-body-secondary"
+                title="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <!-- <a
+                href="https://github.com/YourGitHubUsername"
+                class="text-body-secondary"
+                title="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--bootstrap manuel js-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Switch Theme
+      function toggleTheme() {
+        const htmlTag = document.documentElement;
+        const themeIcon = document.getElementById("themeIcon");
+        if (htmlTag.getAttribute("data-bs-theme") === "dark") {
+          htmlTag.setAttribute("data-bs-theme", "light");
+          themeIcon.className = "bi bi-moon-fill";
+        } else {
+          htmlTag.setAttribute("data-bs-theme", "dark");
+          themeIcon.className = "bi bi-sun-fill";
+        }
+      }
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

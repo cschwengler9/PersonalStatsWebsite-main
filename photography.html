@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="https://picsum.photos/seed/portfolio-favicon/64/64"> 
+    
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--Bootstrap Icons link -->
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <!-- Page-specific styles moved to assets/css/style.css -->
+    <style>
+        .photography-gallery .gallery-card:nth-child(n+4) {
+            display: none;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="" alt="Logo" width="40" height="40">
+                <span class="fw-bold tracking-wide">Developer Portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation" title="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="photography.html">Photography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn btn-outline-secondary theme-toggle-btn" id="themeToggle" onclick="toggleTheme()" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+                            <i class="bi bi-sun-fill" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <main class="container-fluid px-4 my-5 flex-grow-1">
+        <div class="row">
+            
+            <div class="col-12 col-md-3 col-xl-2 mb-4">
+                <div class="position-sticky year-sidebar photography-sidebar">
+                    <h5 class="fw-bold mb-3 small text-uppercase tracking-wider archive-heading">Archive</h5>
+                    <ul class="nav flex-column gap-1" id="filterMenu">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" onclick="return false;">All Year</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9 col-xl-10">
+                
+                <div class="row mb-4 px-1">
+                    <div class="col-12">
+                        <h1 class="display-6 fw-bold mb-1 accent-heading">Portraits & Spaces</h1>
+                        <p class="text-secondary small">The traces of light, geometry, and time passing through the viewfinder.</p>
+                    </div>
+                </div>
+
+                <div class="photography-gallery" id="galleryWrapper">
+                    <div class="gallery-card" data-year="2026">
+                        <img src="https://picsum.photos/800/600?random=11" alt="Sample photography shot 1" onerror="this.src='https://picsum.photos/800/600?random=11'">
+                        <div class="gallery-overlay">
+                            <div class="overlay-title">Golden Hour</div>
+                            <div class="overlay-meta">All Year &bull; A calm evening scene</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-year="2026">
+                        <img src="https://picsum.photos/800/600?random=12" alt="Sample photography shot 2" onerror="this.src='https://picsum.photos/800/600?random=12'">
+                        <div class="gallery-overlay">
+                            <div class="overlay-title">Street Light</div>
+                            <div class="overlay-meta">All Year &bull; Urban textures at dusk</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card" data-year="2026">
+                        <img src="https://picsum.photos/800/600?random=13" alt="Sample photography shot 3" onerror="this.src='https://picsum.photos/800/600?random=13'">
+                        <div class="gallery-overlay">
+                            <div class="overlay-title">Stillness</div>
+                            <div class="overlay-meta">All Year &bull; Minimal composition and light</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="bg-body-tertiary py-4 mt-auto">
+        <div class="container">
+            <div class="row align-items-center text-body-secondary small">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; 2026 Your Name. All rights reserved. Built with Bootstrap 5.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-decoration-none text-body-secondary me-3">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none text-body-secondary me-3">Terms & Conditions</a>
+                    <a href="contact.html" class="text-decoration-none text-body-secondary">Contact</a>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-12 text-center">
+                <div class="d-flex justify-content-center gap-4 fs-4">
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-body-secondary" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer" class="text-body-secondary" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-body-secondary" title="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-body-secondary" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Year based Filtering Script
+        function filterYear(year, element) {
+            // Linklerin aktiflik durumunu değiştir
+            const links = document.querySelectorAll('#filterMenu .nav-link');
+            links.forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
+
+            // Card Filtering
+            const cards = document.querySelectorAll('#galleryWrapper .gallery-card');
+            cards.forEach(card => {
+                if (year === 'all' || card.getAttribute('data-year') === year) {
+                    card.classList.remove('d-none');
+                } else {
+                    card.classList.add('d-none');
+                }
+            });
+        }
+
+        // Switch Theme
+        function toggleTheme() {
+            const htmlTag = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            if (htmlTag.getAttribute('data-bs-theme') === 'dark') {
+                htmlTag.setAttribute('data-bs-theme', 'light');
+                themeIcon.className = 'bi bi-moon-fill';
+            } else {
+                htmlTag.setAttribute('data-bs-theme', 'dark');
+                themeIcon.className = 'bi bi-sun-fill';
+            }
+        }
+    </script>
+</body>
+</html>

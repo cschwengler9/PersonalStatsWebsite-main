@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Certificates</title>
+    <link rel="icon" type="image/x-icon" href="https://picsum.photos/seed/portfolio-favicon/64/64">
+    
+
+    <!-- Bootstrap CPN & Social links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--bootstrap icons-->
+    <link rel="stylesheet" href="assets/css/style.css"> <!--ayrık css-->
+
+    <!-- Page-specific styles moved to assets/css/style.css -->
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+
+                <!-- TODO: Add your brand logo image path (e.g. assets/images/logo.png) and alt text -->
+                <img src="" alt="Logo" width="40" height="40">
+
+                <!-- TODO: Replace brand title/name -->
+                <span class="fw-bold tracking-wide">Developer Portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation" title="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photography.html">Photography</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn btn-outline-secondary theme-toggle-btn" id="themeToggle" onclick="toggleTheme()" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+                            <i class="bi bi-sun-fill" id="themeIcon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-5 flex-grow-1 skills-page">
+        <div class="row mb-5 text-center text-lg-start">
+            <div class="col-12">
+
+                <!-- TODO: Update main heading and intro text -->
+                <h1 class="display-5 fw-bold accent-heading">Skills & Tools</h1>
+                <p class="text-secondary mb-0">A simple starter layout for your core capabilities, delivery stack, and credentials.</p>
+            </div>
+        </div>
+
+        <!-- Tech Stack: Languages & Frameworks -->
+        <section class="mb-5">
+            <h3 class="h5 text-uppercase fw-bold mb-4 tracking-wide section-heading">
+                <i class="bi bi-code-slash me-2"></i> Languages & Frameworks
+            </h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <!-- TODO: Customize technology items, Bootstrap icons, and descriptions -->
+                <div class="col">
+                    <div class="tech-card shadow-sm">
+                        <div class="tech-icon-wrapper d-flex align-items-center justify-content-center"><i class="bi bi-braces fs-5"></i></div>
+                        <div><h4 class="h6 mb-1 fw-bold">JavaScript</h4><p class="text-secondary small mb-0">Interactive UI logic</p></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tech-card shadow-sm">
+                        <div class="tech-icon-wrapper d-flex align-items-center justify-content-center"><i class="bi bi-code-square fs-5"></i></div>
+                        <div><h4 class="h6 mb-1 fw-bold">Python</h4><p class="text-secondary small mb-0">Automation and data work</p></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tech-card shadow-sm">
+                        <div class="tech-icon-wrapper d-flex align-items-center justify-content-center"><i class="bi bi-box fs-5"></i></div>
+                        <div><h4 class="h6 mb-1 fw-bold">R</h4><p class="text-secondary small mb-0">Component-driven interfaces</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack: Database & Cloud -->
+        <section class="mb-5">
+            <h3 class="h5 text-uppercase fw-bold mb-4 tracking-wide section-heading">
+                <i class="bi bi-database-fill me-2"></i> Database & Cloud
+            </h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <!-- TODO: Customize database and cloud technologies -->
+                <div class="col">
+                    <div class="tech-card shadow-sm">
+                        <div class="tech-icon-wrapper d-flex align-items-center justify-content-center"><i class="bi bi-server fs-5"></i></div>
+                        <div><h4 class="h6 mb-1 fw-bold">PostgreSQL</h4><p class="text-secondary small mb-0">Relational data modeling</p></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tech-card shadow-sm">
+                        <div class="tech-icon-wrapper d-flex align-items-center justify-content-center"><i class="bi bi-cloud fs-5"></i></div>
+                        <div><h4 class="h6 mb-1 fw-bold">Azure</h4><p class="text-secondary small mb-0">Cloud hosting and services</p></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tech-card shadow-sm">
+                        <div class="tech-icon-wrapper d-flex align-items-center justify-content-center"><i class="bi bi-hdd-network fs-5"></i></div>
+                        <div><h4 class="h6 mb-1 fw-bold">Supabase</h4><p class="text-secondary small mb-0">Fast backend and auth</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack: Tools & Production -->
+        <section class="mb-5">
+            <h3 class="h5 text-uppercase fw-bold mb-4 tracking-wide section-heading">
+                <i class="bi bi-layers-half me-2"></i> Tools & Production
+            </h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <!-- TODO: Customize software tools and productivity stack -->
+                <div class="col">
+                    <div class="tech-card shadow-sm">
+                        <div class="tech-icon-wrapper d-flex align-items-center justify-content-center"><i class="bi bi-git fs-5"></i></div>
+                        <div><h4 class="h6 mb-1 fw-bold">GitHub</h4><p class="text-secondary small mb-0">Version control and collaboration</p></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tech-card shadow-sm">
+                        <div class="tech-icon-wrapper d-flex align-items-center justify-content-center"><i class="bi bi-pencil-square fs-5"></i></div>
+                        <div><h4 class="h6 mb-1 fw-bold">Figma</h4><p class="text-secondary small mb-0">Design systems and prototyping</p></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tech-card shadow-sm">
+                        <div class="tech-icon-wrapper d-flex align-items-center justify-content-center"><i class="bi bi-rocket-takeoff fs-5"></i></div>
+                        <div><h4 class="h6 mb-1 fw-bold">Vercel</h4><p class="text-secondary small mb-0">Fast deployment workflows</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="skills-divider"></div>
+
+        <!-- Certificates & Credentials Section -->
+        <section class="mb-5">
+            <div class="text-center text-lg-start mb-4">
+                <h3 class="h5 text-uppercase fw-bold mb-1 tracking-wide section-heading">
+                    <i class="bi bi-patch-check-fill me-2"></i> Certificates & Credentials
+                </h3>
+                <p class="text-secondary small">Replace these with your own achievements, courses, or community recognitions.</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
+
+                <!-- TODO: Replace image URLs, modal preview URLs, category badges, and titles -->
+                <div class="col">
+                    <div class="cert-card h-100 shadow-sm" onclick="previewCertificate('https://picsum.photos/seed/cert-1/800/600', 'Web Accessibility Basics')">
+                        <div class="cert-img-wrapper">
+                            <img src="" alt="Certificate preview" data-width="800" data-height="600">
+                        </div>
+                        <div class="p-3">
+                            <span class="text-secondary small d-block mb-1">Course</span>
+                            <h4 class="h6 fw-bold mb-0 text-truncate">Web Accessibility Basics</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cert-card h-100 shadow-sm" onclick="previewCertificate('https://picsum.photos/seed/cert-2/800/600', 'Responsive UI Fundamentals')">
+                        <div class="cert-img-wrapper">
+                            <img src="" alt="Certificate preview" data-width="800" data-height="600">
+                        </div>
+                        <div class="p-3">
+                            <span class="text-secondary small d-block mb-1">Bootcamp</span>
+                            <h4 class="h6 fw-bold mb-0 text-truncate">Responsive UI Fundamentals</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cert-card h-100 shadow-sm" onclick="previewCertificate('https://picsum.photos/seed/cert-3/800/600', 'Product Thinking for Developers')">
+                        <div class="cert-img-wrapper">
+                            <img src="" alt="Certificate preview" data-width="800" data-height="600">
+                        </div>
+                        <div class="p-3">
+                            <span class="text-secondary small d-block mb-1">Workshop</span>
+                            <h4 class="h6 fw-bold mb-0 text-truncate">Product Thinking for Developers</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--(Modal / Pop-up)-->
+    <div class="modal fade" id="certModal" tabindex="-1" aria-labelledby="certModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-body-tertiary border-secondary-subtle">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title fw-bold" id="certModalLabel">Certificate Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-2">
+
+                    <!-- TODO: Set your default fallback image path in 'onerror' attribute if needed -->
+                    <img id="certModalImg" src="" alt="Certificate Full Size" class="img-fluid rounded shadow cert-modal-image" onerror="this.onerror=null; this.src='assets/images/resim.png';">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+   <footer class="bg-body-tertiary py-4 mt-auto">
+    <div class="container">
+        <div class="row align-items-center text-body-secondary small mb-3">
+
+            <!-- TODO: Update copyright owner name -->
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; 2026 Your Name. All rights reserved. Built with Bootstrap 5.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="#" class="text-decoration-none text-body-secondary me-3">Privacy Policy</a>
+                <a href="#" class="text-decoration-none text-body-secondary me-3">Terms & Conditions</a>
+                <a href="contact.html" class="text-decoration-none text-body-secondary">Contact</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="d-flex justify-content-center gap-4 fs-4">
+                    <!-- TODO: Replace href values with your social media profile URLs -->
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-body-secondary" title="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer" class="text-body-secondary" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-body-secondary" title="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-body-secondary" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        //Dynamically launch and populate the certificate modal (popup).
+        function previewCertificate(imgSrc, title) {
+            document.getElementById('certModalImg').src = imgSrc;
+            document.getElementById('certModalLabel').innerText = title;
+            
+            const certModal = new bootstrap.Modal(document.getElementById('certModal'));
+            certModal.show();
+        }
+
+
+        //Switch Theme
+        function toggleTheme() {
+            const htmlTag = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            if (htmlTag.getAttribute('data-bs-theme') === 'dark') {
+                htmlTag.setAttribute('data-bs-theme', 'light');
+                themeIcon.className = 'bi bi-moon-fill';
+            } else {
+                htmlTag.setAttribute('data-bs-theme', 'dark');
+                themeIcon.className = 'bi bi-sun-fill';
+            }
+        }
+    </script>
+</body>
+</html>
