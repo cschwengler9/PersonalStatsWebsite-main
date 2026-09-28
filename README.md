@@ -1,5 +1,8 @@
-# Bootstrap Responsive Portfolio Template
+## Caroline Schwengler's Website
 
+## Bootstrap Responsive Portfolio 
+
+Template Taken from:
 [![GitHub License](https://img.shields.io/github/license/EgeSoysal/bootstrap-portfolio-template?style=flat-square&color=orange)](LICENSE)
 [![Bootstrap Version](https://img.shields.io/badge/Bootstrap-v5.3.3-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![Tech Stack](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20JS-blue?style=flat-square)](#-tech-stack)
